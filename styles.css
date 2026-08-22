@@ -262,13 +262,6 @@ img {
   letter-spacing: -0.035em;
 }
 
-.section-intro > p {
-  margin: 18px 0 0;
-  color: var(--muted);
-  font-size: 0.9rem;
-  line-height: 1.45;
-}
-
 .section-body {
   min-width: 0;
 }
@@ -322,8 +315,6 @@ img {
 
 .subheading-row {
   display: flex;
-  justify-content: space-between;
-  gap: 32px;
   align-items: baseline;
 }
 
@@ -331,12 +322,6 @@ img {
   margin: 0;
   font-size: 1.3rem;
   font-weight: 600;
-}
-
-.subheading-row p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.85rem;
 }
 
 .submission-list {
@@ -630,10 +615,6 @@ img {
 
   .subheading-row {
     display: block;
-  }
-
-  .subheading-row p {
-    margin-top: 7px;
   }
 
   .submission-list li,
