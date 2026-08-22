@@ -1,1 +1,1 @@
-Personal website of Safwan Islam Nabeel: https://safwanx.github.io/
+Personal website of Safwan Nabeel: https://safwanx.github.io/
