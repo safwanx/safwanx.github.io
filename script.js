@@ -1,6 +1,5 @@
 const menuButton = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".site-nav");
-const header = document.querySelector(".site-header");
 const year = document.querySelector("#year");
 
 if (year) {
@@ -34,10 +33,3 @@ if (menuButton && nav) {
     }
   });
 }
-
-function updateHeader() {
-  header?.classList.toggle("scrolled", window.scrollY > 8);
-}
-
-updateHeader();
-window.addEventListener("scroll", updateHeader, { passive: true });

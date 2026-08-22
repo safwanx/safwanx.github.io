@@ -10,7 +10,7 @@ Researchers, potential collaborators, graduate-program reviewers, and machine-le
 
 ## Product Purpose
 
-Present Safwan Islam Nabeel as a rigorous machine-learning researcher and engineer, make his published work and credentials easy to verify, and give relevant visitors clear paths to read his research, review his CV, inspect his code, or contact him.
+Present Safwan Nabeel as a rigorous machine-learning researcher and engineer, make his published work and credentials easy to verify, and give relevant visitors clear paths to read his research, review his CV, inspect his code, or contact him.
 
 ## Brand Personality
 
