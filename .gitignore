@@ -1,0 +1,17 @@
+# Working files that stay on this machine
+PRODUCT.md
+DESIGN.md
+assets/arabic.png
+profile-update/
+*.bundle
+*.bak
+
+# Editor, tool, and OS clutter
+.claude/
+.vscode/
+.idea/
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini

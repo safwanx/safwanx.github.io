@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Safwan Nabeel | Machine Learning Researcher</title>
+  <meta
+    name="description"
+    content="Safwan Nabeel works on visual and multimodal machine learning, with a growing focus on robustness, privacy, and reliability under distribution shift."
+  >
+  <meta name="theme-color" content="#f8f7f0">
+
+  <meta property="og:title" content="Safwan Nabeel">
+  <meta
+    property="og:description"
+    content="Visual and multimodal machine learning, with a growing focus on robustness, privacy, and reliability under distribution shift."
+  >
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://safwanx.github.io/">
+  <meta property="og:image" content="https://safwanx.github.io/assets/safwan-portrait.jpg">
+  <meta property="og:image:alt" content="Portrait of Safwan Nabeel">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="canonical" href="https://safwanx.github.io/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@300..800&amp;display=swap"
+    rel="stylesheet"
+  >
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script>
+    // Resolve the theme before first paint: a saved choice wins, otherwise follow the system.
+    (function () {
+      var root = document.documentElement;
+      root.classList.add("js");
+      var theme = null;
+      try { theme = localStorage.getItem("theme"); } catch (error) {}
+      if (theme !== "light" && theme !== "dark") {
+        theme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      root.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css?v=20260921b">
+  <script src="script.js?v=20260921b" defer></script>
+</head>
+
+<body id="top">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="shell nav-wrap">
+      <a class="brand" href="#top" aria-label="Safwan Nabeel, back to top" title="Safwan Nabeel">
+        <svg class="brand-mark" viewBox="0 0 735 346" width="85" height="40" aria-hidden="true" focusable="false">
+          <path fill="currentColor" fill-rule="evenodd" d="M41 338.5C24.1 333.7 13.5 322.5 8.4 303.9C6 295.1 6 276.4 8.4 265C10.8 253.3 16.8 235.7 23.2 221.4C32.2 201.4 55 160.1 57.5 159.3C58.6 159 75.8 169.8 85.4 177L91 181.1L89.1 184.8C88.1 186.8 83.1 195.6 78.1 204.4C73.2 213.1 68.9 220.8 68.7 221.4C68.5 222 62.4 218.5 55.1 213.5C44.4 206.3 41.7 204.8 41 206C39 209.2 23.1 245.8 21.1 251.7C14.2 272.3 24.9 285.8 49.8 287.7C70.7 289.4 87.6 286.2 106.3 276.9C118.3 271 124.3 267.3 132.8 260.7L139.1 255.8L138.4 246.6C137.6 235.3 135.8 225.3 132.4 213.2L129.7 203.8L139.1 181.9C144.3 169.9 148.8 160 149.1 160C150.6 160 157.1 179.3 159.1 190C161.1 201 160.6 221 158.1 232.5C152.8 255.7 144.7 275.4 132.9 293.4C123 308.4 105.1 324 89.6 331C73.1 338.5 52.4 341.7 41 338.5ZM231 338.9C212.2 337.8 210 337.4 210 334.9C210 333.8 211.4 332.1 213.2 330.9C221.1 325.9 250.2 312.5 269 305.1C280.3 300.7 299.2 293.3 311 288.7C338.2 278 344.4 275 352.5 268.3C361.6 260.8 362.6 259.1 361 253.5C360.3 251 359.2 248.6 358.6 248.1C358 247.6 354.7 247.6 351 248.1C344 249 334.4 247.8 330 245.5C322 241.3 319.8 232.1 324.3 221.4C337.9 189.2 347.6 173.1 354.7 171.3C358.6 170.4 365.2 173.1 369.7 177.7C374.6 182.5 380.6 191.5 381.6 195.4C381.9 196.8 382.7 198 383.4 198C384 198 395.8 196.4 409.7 194.3L434.9 190.7L438.5 182.6C444 170.3 455.5 149.9 464.3 136.7C482.6 109.3 495.6 97.8 508 97.8C517.7 97.8 523 101.3 527.1 110.5C529.9 116.7 530.1 128.3 527.6 138C525.2 147.1 513.6 170.5 505.2 183C501.3 188.8 498.3 193.6 498.5 193.8C499.3 194.7 524.8 191.6 536 189.4C550 186.5 573.3 179.1 579.6 175.5C584.5 172.6 590.2 166.5 593 161C594.1 158.8 595.5 157 596.2 157C598.2 157 596.3 164.5 591.2 176.4L586.1 188.1L588.8 189.1C590.4 189.7 594.3 189.9 598.4 189.5C606.4 188.7 604.6 190.1 622 170.5C628.3 163.3 642.2 148.6 653 137.7C674.9 115.4 679 112.6 694.8 109.5C708.4 106.7 716.2 109.2 723.1 118.4C728.9 126.1 730.1 133.7 726.7 142.5C722.6 153.5 706.7 176.2 696.1 186.2C669.2 212 621.9 229.8 579 230.3C567.7 230.5 566 230.3 564.1 228.6C562.9 227.5 562 225.9 562 224.9C562 222.1 560.5 221.8 555.2 223.9C539.4 230.1 511.6 236.2 490.3 238.1C467.3 240.2 451.3 237.4 445.4 230.4L443.4 227.9L413.5 235.4L383.5 242.8L380.4 251.8C373.4 271.7 361.7 290.2 346.5 305.5C316 336 293.9 342.4 231 338.9ZM209 286C209 284.6 206.8 250.2 204.1 209.5L199.1 135.5L201.3 131.9C210.4 116.9 225.5 93.2 225.7 93.8C225.8 94.2 228 125.8 230.5 164C232.9 202.2 235.2 236.2 235.5 239.5L236.1 245.5L224.4 264C218 274.2 212 283.9 210.9 285.5C209 288.5 209 288.5 209 286ZM634 183.4C652.7 179.6 678.1 172 687 167.7C690.4 166 691.6 164.9 691.8 162.8C692.3 158.9 689.5 154.4 684.8 151.2C681.1 148.8 679.7 148.5 672.6 148.5C664.6 148.5 664.3 148.6 656.5 153.4C651.2 156.7 644 162.9 635 171.7C620 186.5 620 186.3 634 183.4ZM475.3 179.4C478.6 178.6 484.2 176.6 487.7 175C495.5 171.4 497.3 168.2 495.9 160.6C494.5 152.8 486.7 142 482.6 142C478.2 142.1 472.5 146.6 466.1 155C458.3 165.5 457 168.4 458.1 172.3C459.3 176.5 463.8 181 466.8 181C468.1 181 472 180.3 475.3 179.4ZM478.8 55.5C470.5 47.8 466.3 43.3 466.8 42.5C469.5 37.9 494.7 7.1 495.7 7.3C496.3 7.4 502.3 12.6 508.9 18.8L520.9 30.1L509 45.3C502.5 53.7 495.8 62 494.3 63.8L491.5 67.2L478.8 55.5Z"/>
+        </svg>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#interests" data-spy>Interests</a>
+        <a href="#research" data-spy>Research</a>
+        <a href="#experience" data-spy>Experience</a>
+        <a href="#background" data-spy>Background</a>
+        <a href="#contact" data-spy>Contact</a>
+        <a class="nav-cv" href="assets/Safwan_CV.pdf" target="_blank" rel="noreferrer">CV ↗</a>
+      </nav>
+
+      <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch to dark theme" data-theme-toggle>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M20.4 14.3A8.6 8.6 0 0 1 9.7 3.6a8.6 8.6 0 1 0 10.7 10.7Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <path d="M12 2.6v2.3M12 19.1v2.3M2.6 12h2.3M19.1 12h2.3M5.4 5.4 7 7M17 17l1.6 1.6M5.4 18.6 7 17M17 7l1.6-1.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="intro">
+      <div class="shell intro-grid">
+        <div class="intro-copy">
+          <p class="label">Machine learning researcher and engineer</p>
+          <h1>Safwan <span>Nabeel</span></h1>
+          <p class="lede">
+            I work on visual and multimodal machine learning, with a growing
+            focus on robustness, privacy, and reliability under distribution
+            shift.
+          </p>
+          <p class="bio">
+            My research examines how models behave outside clean benchmark
+            settings, including identity leakage after video anonymization,
+            reliability under distribution shift, and multimodal learning and
+            fusion.
+          </p>
+          <p class="bio now">
+            Currently a junior ML engineer at BestCircle AI (Dhahran Techno
+            Valley).
+          </p>
+
+          <nav class="link-row" aria-label="Professional profiles">
+            <a href="https://scholar.google.com/citations?user=Bl3jULcAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
+            <a href="https://github.com/safwanx" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/safwan-nabeel-a499581b9/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="assets/Safwan_CV.pdf" target="_blank" rel="noreferrer">CV</a>
+          </nav>
+        </div>
+
+        <figure class="portrait">
+          <img
+            src="assets/safwan-portrait.jpg"
+            alt="Safwan Nabeel standing in a sunlit atrium"
+            width="1600"
+            height="1067"
+            fetchpriority="high"
+          >
+          <figcaption>Dhahran, Saudi Arabia</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div class="deep work">
+      <section id="interests" class="block">
+        <div class="shell block-grid">
+          <h2 class="label">Research interests</h2>
+
+          <div class="block-body tight">
+            <p class="direction" data-reveal>
+              I have worked with multimodal models, and I am now moving toward
+              studying how robust and reliable they are.
+            </p>
+
+            <ul class="interest-list">
+              <li data-reveal>
+                <h3>Robustness in multimodal systems</h3>
+                <p>How models behave when modalities change, disappear, become noisy, or provide conflicting information.</p>
+              </li>
+              <li data-reveal>
+                <h3>Privacy and trustworthy visual ML</h3>
+                <p>What information survives anonymization, and how privacy protections should be evaluated.</p>
+              </li>
+              <li data-reveal>
+                <h3>Reliability under distribution shift</h3>
+                <p>When and why models fail once deployment data differs from training or benchmark data.</p>
+              </li>
+            </ul>
+
+            <p class="domains" data-reveal>
+              <span class="label">Application domains</span>
+              Healthcare and industrial systems.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="research" class="block">
+        <div class="shell block-grid">
+          <h2 class="label">Selected research</h2>
+
+          <div class="block-body research-list">
+            <article class="publication" data-reveal>
+              <p class="meta">Multimodal learning and fusion · CVPR Workshops 2026</p>
+              <h3>
+                TWASEL at SignEval 2026: Adaptive Multi-Stream Pose Fusion for
+                Continuous Sign Language Recognition
+              </h3>
+              <p class="authors">
+                Sadam Al-Azani, <strong>Safwan Nabeel</strong>, Qasim Al Mahfood,
+                and Mohanad Mohamed
+              </p>
+              <p>
+                TWASEL separates body, hand, and facial keypoints into dedicated
+                streams, then learns how much to use from each stream over time.
+                On the Isharah benchmark, beam-search decoding reached 16.62%
+                word error rate on the test set.
+              </p>
+              <div class="link-row">
+                <a
+                  href="https://openaccess.thecvf.com/content/CVPR2026W/MSLR/papers/Al-Azani_TWASEL_at_SignEval_2026_Adaptive_Multi-Stream_Pose_Fusion_for_Continuous_CVPRW_2026_paper.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                >Read the paper</a>
+                <a href="https://github.com/sazani/TWASEL-SignLang" target="_blank" rel="noreferrer">View the code</a>
+              </div>
+            </article>
+
+            <article class="publication" data-reveal>
+              <p class="meta">Privacy and trustworthy visual ML · Manuscript under review</p>
+              <h3>Identity leakage after video anonymization</h3>
+              <p class="authors"><strong>Safwan Nabeel</strong>, first author</p>
+              <p>
+                Anonymization is usually judged by whether a face can still be
+                recognized. This work evaluates what identity remains elsewhere,
+                attacking anonymized action-recognition video through face, body
+                appearance, pose, gait, and learned features. Face-focused
+                anonymization can leave substantial identity leakage through
+                everything that is not the face.
+              </p>
+            </article>
+
+            <article class="publication" data-reveal>
+              <p class="meta">Reliability and distribution shift · Under review, IJCV</p>
+              <h3>
+                Are Crowd Counts Reliable? Post-Hoc Reliability Assessment for
+                Crowd Counting Under Dataset Shift
+              </h3>
+              <p class="authors">
+                <strong>Safwan Nabeel</strong>, Sadam AlAzani, and Muhammad Jabbar
+              </p>
+              <p>
+                A post-hoc framework that predicts per-image error risk for
+                frozen crowd counters, then tests whether those estimates hold
+                on a different dataset. Keeping the 80% of images ranked most
+                reliable reduced mean absolute error by 19 to 68% across seven
+                settings, though calibration did not hold up after the shift.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="experience" class="group">
+      <section class="block" aria-labelledby="research-exp-label">
+        <div class="shell block-grid">
+          <h2 class="label" id="research-exp-label">Research experience</h2>
+
+          <ol class="row-list">
+            <li data-reveal>
+              <p class="row-key">Jun to Aug 2025</p>
+              <div>
+                <h3>AI Trainee</h3>
+                <p class="organization">KAUST</p>
+                <p>Intensive AI specialization with research across natural language processing, reinforcement learning, and deep unsupervised learning. Selected among 100 of more than 10,000 applicants.</p>
+              </div>
+            </li>
+            <li data-reveal>
+              <p class="row-key">Jun to Aug 2024</p>
+              <div>
+                <h3>Research Intern</h3>
+                <p class="organization">JRCAI, KFUPM</p>
+                <p>Investigated crowd-estimation models using convolutional networks and Vision Transformers.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Selected engineering: hidden for now, to be filled in later. Restore by removing the comment markers.
+      <section class="block" aria-labelledby="engineering-label">
+        <div class="shell block-grid">
+          <h2 class="label" id="engineering-label">Selected engineering</h2>
+
+          <ol class="row-list">
+            <li data-reveal>
+              <p class="row-key">Video understanding</p>
+              <div>
+                <h3>Real-time video-to-text summarization</h3>
+                <p>A training-free pipeline: YOLOv11n selects frames, Florence-2 describes them, and Command R+ writes rolling one-minute summaries, served through FastAPI.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+      -->
+
+      <section class="block" aria-labelledby="work-label">
+        <div class="shell block-grid">
+          <h2 class="label" id="work-label">Professional experience</h2>
+
+          <ol class="row-list">
+            <li data-reveal>
+              <p class="row-key">Sep 2025 to present</p>
+              <div>
+                <h3>Junior ML Engineer</h3>
+                <p class="organization">BestCircle AI (Dhahran Techno Valley)</p>
+                <p>Predictive maintenance and anomaly detection for oil, gas, and light-industry applications.</p>
+              </div>
+            </li>
+            <li data-reveal>
+              <p class="row-key">2026</p>
+              <div>
+                <h3>Teaching Assistant</h3>
+                <p class="organization">KAUST Academy</p>
+                <p>Mentored SRSI student research from problem formulation through experiments and technical communication.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+    </div>
+
+    <section id="background" class="block">
+      <div class="shell block-grid">
+        <h2 class="label">Background</h2>
+
+        <div class="block-body">
+          <div class="education" data-reveal>
+            <h3 class="sublabel">Education</h3>
+            <p class="degree">BSc, Computer Information Systems</p>
+            <p>Imam Abdulrahman bin Faisal University</p>
+            <p>Second Honors · Class rank: 2nd of 65</p>
+          </div>
+
+          <div class="recognition" data-reveal>
+            <h3 class="sublabel">Selected recognition</h3>
+            <ul class="row-list compact">
+              <li><p class="row-key">2025</p><p>2nd Place, GSR Hackathon at KFUPM</p></li>
+              <li><p class="row-key">2024</p><p>Best Poster, Undergraduate AI Projects Showcase at KFUPM</p></li>
+              <li><p class="row-key">2024</p><p>1st Place, Cybersecurity Category, Future Technologies</p></li>
+              <li><p class="row-key">2023</p><p>People’s Choice Award and Global Top 10, Kaspersky Secure IT Cup</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="deep contact">
+      <div class="shell contact-layout">
+        <div>
+          <h2>Let’s talk.</h2>
+          <p>Research collaboration, applied ML work, or teaching opportunities.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="email-link" href="mailto:safwanxnabeel@outlook.com">safwanxnabeel@outlook.com</a>
+          <button class="copy-email" type="button" data-copy="safwanxnabeel@outlook.com">
+            <span data-copy-label>Copy address</span>
+          </button>
+          <span class="visually-hidden" role="status" aria-live="polite" data-copy-status></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="deep site-footer">
+    <div class="shell footer-inner">
+      <p>© <span id="year"></span> Safwan Nabeel</p>
+      <div>
+        <a href="https://scholar.google.com/citations?user=Bl3jULcAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Scholar</a>
+        <a href="https://github.com/safwanx" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/safwan-nabeel-a499581b9/" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
