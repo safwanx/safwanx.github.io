@@ -109,8 +109,7 @@
           </p>
           <p class="bio now">
             Currently a junior ML engineer at BestCircle AI (Dhahran Techno
-            Valley). My first-author paper on identity leakage was accepted
-            at ACCV 2026.
+            Valley).
           </p>
 
           <nav class="link-row" aria-label="Professional profiles">
@@ -183,14 +182,22 @@
                 <strong>Safwan Nabeel</strong>, Farah AlShiha, and Muzammil Behzad
               </p>
               <p>
-                Hiding a face can preserve action recognition without preventing
-                identification from other visual cues. NTU120-Privacy-21K is a
-                reproducible protocol of 21,600 videos covering all 120 NTU
-                RGB+D 120 actions, attacked through face, appearance, pose, and
-                silhouette matching. On cross-view probes, face blur cuts face
-                Rank-1 from 83.1% to 3.4%, while person re-identification stays
-                at 84.7%, against 85.3% on unmodified video.
+                Blurring someone’s face in a video feels like it should make
+                them anonymous. We tested that. Using 21,600 videos, we tried
+                to pick out the same person again after their face was hidden,
+                relying only on what was still visible: their clothes and
+                build, the way they stand and move, and their outline.
               </p>
+              <p>
+                The blur worked on faces. Face recognition fell from 83% to 3%.
+                But a system that recognizes people by their overall appearance
+                still found the right person 85% of the time, almost exactly as
+                often as with no blurring at all. Hiding a face is not the same
+                as hiding a person.
+              </p>
+              <div class="link-row">
+                <a href="https://github.com/safwanx/anonymized-not-anonymous" target="_blank" rel="noreferrer">View the code &amp; paper</a>
+              </div>
             </article>
 
             <article class="publication" data-reveal>
