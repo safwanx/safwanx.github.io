@@ -30,21 +30,9 @@
     rel="stylesheet"
   >
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <script>
-    // Resolve the theme before first paint: a saved choice wins, otherwise follow the system.
-    (function () {
-      var root = document.documentElement;
-      root.classList.add("js");
-      var theme = null;
-      try { theme = localStorage.getItem("theme"); } catch (error) {}
-      if (theme !== "light" && theme !== "dark") {
-        theme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-      }
-      root.setAttribute("data-theme", theme);
-    })();
-  </script>
-  <link rel="stylesheet" href="styles.css?v=20260921b">
-  <script src="script.js?v=20260921b" defer></script>
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="stylesheet" href="styles.css?v=20260924">
+  <script src="script.js?v=20260924" defer></script>
 </head>
 
 <body id="top">
@@ -77,16 +65,6 @@
         <a href="#contact" data-spy>Contact</a>
         <a class="nav-cv" href="assets/Safwan_CV.pdf" target="_blank" rel="noreferrer">CV ↗</a>
       </nav>
-
-      <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch to dark theme" data-theme-toggle>
-        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <path d="M20.4 14.3A8.6 8.6 0 0 1 9.7 3.6a8.6 8.6 0 1 0 10.7 10.7Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-        </svg>
-        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="1.6"/>
-          <path d="M12 2.6v2.3M12 19.1v2.3M2.6 12h2.3M19.1 12h2.3M5.4 5.4 7 7M17 17l1.6 1.6M5.4 18.6 7 17M17 7l1.6-1.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-        </svg>
-      </button>
     </div>
   </header>
 

@@ -7,57 +7,6 @@ if (year) {
   year.textContent = new Date().getFullYear();
 }
 
-/* Light and dark theme. The page head has already set data-theme before first paint. */
-
-const root = document.documentElement;
-const themeButton = document.querySelector("[data-theme-toggle]");
-const themeMeta = document.querySelector('meta[name="theme-color"]');
-const systemDark = window.matchMedia("(prefers-color-scheme: dark)");
-const browserBar = { light: "#f8f7f0", dark: "#05141f" };
-
-const savedTheme = () => {
-  try {
-    const value = localStorage.getItem("theme");
-    return value === "light" || value === "dark" ? value : null;
-  } catch (error) {
-    return null;
-  }
-};
-
-const applyTheme = (theme) => {
-  root.setAttribute("data-theme", theme);
-
-  if (themeMeta) {
-    themeMeta.setAttribute("content", browserBar[theme]);
-  }
-
-  if (themeButton) {
-    const label = `Switch to ${theme === "dark" ? "light" : "dark"} theme`;
-    themeButton.setAttribute("aria-label", label);
-    themeButton.setAttribute("title", label);
-  }
-};
-
-applyTheme(root.getAttribute("data-theme") === "dark" ? "dark" : "light");
-
-if (themeButton) {
-  themeButton.addEventListener("click", () => {
-    const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
-    applyTheme(next);
-    try {
-      localStorage.setItem("theme", next);
-    } catch (error) {
-      /* Private browsing: the choice simply lasts for this visit. */
-    }
-  });
-}
-
-/* Until the visitor chooses, keep following the system setting. */
-systemDark.addEventListener("change", (event) => {
-  if (!savedTheme()) {
-    applyTheme(event.matches ? "dark" : "light");
-  }
-});
 
 /* Header hairline once the page has moved */
 

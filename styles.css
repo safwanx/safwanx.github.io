@@ -26,9 +26,6 @@
   --link: var(--teal-deep);
   --ring: var(--teal);
 
-  --select-ground: var(--tide);
-  --select-ink: var(--on-tide);
-
   --font: "Host Grotesk", "Segoe UI", system-ui, sans-serif;
   --page-width: 1120px;
   --header-height: 68px;
@@ -36,44 +33,6 @@
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 
   color-scheme: light;
-}
-
-/* Night: the same palette after dark. The ground drops to deep water and the tide bands lift
-   slightly above it, so the page keeps its rhythm. The script in the page head always sets
-   data-theme; the media query covers visitors without JavaScript. */
-
-:root[data-theme="dark"] {
-  --shell: oklch(18.5% 0.03 240);
-  --shell-deep: oklch(23% 0.035 240);
-  --ink: oklch(95% 0.01 100);
-  --body: oklch(86% 0.014 100);
-  --muted: oklch(72% 0.02 200);
-  --line: oklch(33% 0.03 235);
-  --teal: oklch(70% 0.09 190);
-  --teal-deep: oklch(78% 0.085 185);
-  --tide: oklch(27% 0.045 238);
-  --tide-line: oklch(39% 0.04 232);
-  --select-ground: var(--spark);
-  --select-ink: oklch(18.5% 0.03 240);
-  color-scheme: dark;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme]) {
-    --shell: oklch(18.5% 0.03 240);
-    --shell-deep: oklch(23% 0.035 240);
-    --ink: oklch(95% 0.01 100);
-    --body: oklch(86% 0.014 100);
-    --muted: oklch(72% 0.02 200);
-    --line: oklch(33% 0.03 235);
-    --teal: oklch(70% 0.09 190);
-    --teal-deep: oklch(78% 0.085 185);
-    --tide: oklch(27% 0.045 238);
-    --tide-line: oklch(39% 0.04 232);
-    --select-ground: var(--spark);
-    --select-ink: oklch(18.5% 0.03 240);
-    color-scheme: dark;
-  }
 }
 
 .deep {
@@ -140,8 +99,8 @@ img {
 }
 
 ::selection {
-  background: var(--select-ground);
-  color: var(--select-ink);
+  background: var(--tide);
+  color: var(--on-tide);
 }
 
 .shell {
@@ -263,47 +222,6 @@ img {
   margin-left: auto;
   color: var(--body);
   font-size: 0.92rem;
-}
-
-/* Theme toggle: shows the moon by day and the sun by night. Hidden when scripts are off. */
-
-.theme-toggle {
-  display: none;
-  flex: none;
-  place-items: center;
-  width: 38px;
-  height: 38px;
-  padding: 0;
-  border: 1px solid var(--line);
-  border-radius: 50%;
-  background: transparent;
-  color: var(--ink);
-  cursor: pointer;
-  transition: border-color 200ms var(--ease), color 200ms var(--ease);
-}
-
-.js .theme-toggle {
-  display: inline-grid;
-}
-
-.theme-toggle:hover {
-  border-color: var(--teal);
-  color: var(--teal-deep);
-}
-
-.theme-toggle svg {
-  grid-area: 1 / 1;
-  width: 18px;
-  height: 18px;
-}
-
-.icon-sun,
-:root[data-theme="dark"] .icon-moon {
-  display: none;
-}
-
-:root[data-theme="dark"] .icon-sun {
-  display: block;
 }
 
 .site-nav a {
@@ -771,13 +689,8 @@ img {
     gap: 8px;
   }
 
-  .theme-toggle {
-    order: 2;
-    margin-left: auto;
-  }
-
   .menu-toggle {
-    order: 3;
+    margin-left: auto;
   }
 
   .site-nav {
