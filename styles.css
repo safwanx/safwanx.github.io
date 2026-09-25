@@ -728,15 +728,98 @@ img {
     display: block;
   }
 
+  /* Phone hero: a modest centered portrait, then the name and intro centered beneath it,
+     the layout most researcher sites use on phones. */
+
+  .intro {
+    padding-block: 28px 56px;
+  }
+
   .intro-grid {
     grid-template-columns: 1fr;
-    gap: 34px;
+    gap: 26px;
     align-items: start;
+    justify-items: center;
+    text-align: center;
   }
 
   .portrait {
     order: -1;
-    width: min(50vw, 210px);
+    width: 200px;
+  }
+
+  .portrait img {
+    aspect-ratio: 4 / 5;
+    object-position: 50% 38%;
+    border-radius: 4px;
+  }
+
+  .portrait figcaption {
+    margin-top: 10px;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  .label {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+  }
+
+  .intro h1 {
+    margin-top: 10px;
+    font-size: clamp(3.4rem, 17vw, 4.6rem);
+  }
+
+  .lede,
+  .bio {
+    margin-inline: auto;
+  }
+
+  .lede {
+    margin-top: 22px;
+    font-size: 1.22rem;
+  }
+
+  .intro .link-row {
+    justify-content: center;
+    margin-top: 26px;
+    gap: 10px 22px;
+  }
+
+  .block {
+    padding-block: 52px;
+  }
+
+  .block-grid {
+    gap: 18px;
+  }
+
+  .block-body {
+    gap: 40px;
+  }
+
+  .research-list {
+    gap: 40px;
+  }
+
+  .publication + .publication {
+    padding-top: 40px;
+  }
+
+  .publication h3 {
+    font-size: 1.45rem;
+  }
+
+  .direction {
+    font-size: 1.15rem;
+  }
+
+  .contact {
+    padding-block: 64px;
+  }
+
+  .contact h2 {
+    font-size: 2.8rem;
   }
 
   .row-list li {
